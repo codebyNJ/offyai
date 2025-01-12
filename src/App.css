@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Rock+Salt&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0 32px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background-color: #5fdfb7b9;
+    color: black;
+}
+
+section {
+    margin-bottom: 5%;
+}
+
+/* Navigation Styles */
+nav {
+    margin: 2% 0 5% 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 20px;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #5FDFB6;
+    left: 0;
+    bottom: -10px;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Header Styles */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo p {
+    font-family: "Press Start 2P", serif;
+    font-size: 24px;
+}
+
+.logo p span {
+    color: #5FDFB6;
+}
+
+.head .title {
+    text-align: center;
+    line-height: 50px;
+    margin: 10% 0;
+}
+
+.title h1 {
+    font-size: 72px;
+}
+
+.title h2 {
+    font-size: 68px;
+    font-family: "Rock Salt", serif;
+    font-weight: 400;
+    color: #5FDFB6;
+}
+
+.head .tagline {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    font-weight: 400;
+}
+
+#ouraim h2,
+#about h2,
+#downloads h2,
+#report h2 {
+    font-family: "Press Start 2P", serif;
+    color: #5FDFB6;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+/* Our Aim Section */
+#ouraim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ouraim p {
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    text-align: justify;
+    line-height: 200%;
+}
+
+/* About Section */
+#about .question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#about .question h3{
+    color: #5FDFB6;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#about .question div {
+    margin-left: 50px;
+}
+
+#about p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 200%;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.fea_and_cas {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.fea_and_cas h3{
+    color: #5FDFB6;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.fea_and_cas ul {
+    font-size: 18px;
+    line-height: 200%;
+    width: 100%;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.fea_and_cas img {
+    margin-left: 25%;
+}
+
+.fea_and_cas div {
+    margin-left: 5%;
+}
+
+/* Download Section */
+.tagline {
+    text-align: center;
+    line-height: 200%;
+    margin: 100px;
+}
+
+.tagline h3 {
+    font-size: 44px;
+}
+
+.tagline h4 {
+    font-size: 40px;
+    font-family: "Rock Salt", serif;
+    font-weight: 400;
+    color: #5FDFB6;
+}
+
+#downloads .button {
+    text-align: center;
+}
+
+#downloads button {
+    font-size: 24px;
+    padding: 24px;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#downloads button:hover {
+    background-color: black;
+    color: white;
+    border: #5FDFB6;
+    cursor: pointer;
+}
+
+
+
+/* Report Section */
+#report p {
+    margin: 70px 20px 100px 100px;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 3% 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    /* Tablet View */
+    #ouraim,
+    #about .question,
+    .fea_and_cas {
+        display: block;
+    }
+
+    #ouraim p {
+        width: 100%;
+    }
+
+    .title h1 {
+        font-size: 68px;
+    }
+
+    .title h2 {
+        font-size: 64px;
+    }
+
+    .fea_and_cas img {
+        margin-left: 0;
+    }
+
+    .fea_and_cas ul,
+    .fea_and_cas h3 {
+        text-align: left;
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    #report p {
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    #about .question div {
+        margin-left: 0;
+    }
+
+    img {
+        margin: 50px 0;
+    }
+
+    .fea_and_cas {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Larger Mobile Devices */
+    nav {
+        margin: 2% 0;
+    }
+
+    nav ul {
+        font-size: 16px;
+    }
+
+    .head .title {
+        line-height: 40px;
+        margin: 5% 0;
+    }
+
+    .title h1 {
+        font-size: 48px;
+    }
+
+    .title h2 {
+        font-size: 44px;
+    }
+
+    .tagline h3 {
+        font-size: 36px;
+    }
+
+    .tagline h4 {
+        font-size: 28px;
+    }
+
+    #ouraim p,
+    #about p {
+        font-size: 16px;
+        line-height: 180%;
+    }
+
+    .fea_and_cas {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fea_and_cas img {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .fea_and_cas ul {
+        margin: 0 auto;
+        text-align: left;
+        width: 90%;
+    }
+
+    #downloads button {
+        padding: 16px;
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller Mobile Devices */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 56px;
+    }
+
+    .logo p {
+        font-size: 20px;
+    }
+
+    .head .title {
+        line-height: 24px;
+        margin: 30px 0;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+    .tagline {
+        margin: 32px;
+        font-size: 12px;
+        line-height: 28px;
+    }
+    .tagline h3 {
+        font-size: 28px;
+    }
+
+    .tagline h4 {
+        font-size: 16px;
+    }
+    #ouraim h2,
+    #about h2,
+    #downloads h2,
+    #report h2 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    #ouraim p,
+    #about p {
+        font-size: 16px;
+        width: 100%;
+        text-align: justify;
+        line-height: 160%;
+    }
+
+    img {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .fea_and_cas ul {
+        font-size: 16px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #downloads button {
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 30px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    #report p {
+        font-size: 16px;
+        margin: 48px 0;
+    }
+}
+
