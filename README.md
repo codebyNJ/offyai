@@ -65,5 +65,5 @@ MIT
 
 ---
 
-> GitHub [@amitmerchant1990](https://github.com/codebyNJ) &nbsp;&middot;&nbsp;
+> GitHub [@codebyNJ](https://github.com/codebyNJ) &nbsp;&middot;&nbsp;
 
