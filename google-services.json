@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "917983054632",
+    "project_id": "llminference-c8d32",
+    "storage_bucket": "llminference-c8d32.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917983054632:android:ea5006bdc10e7af8fede1d",
+        "android_client_info": {
+          "package_name": "com.google.mediapipe.examples.llminference"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIy5xS4YpUCZcS1c3tmTDmuyjPOpCqwXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
